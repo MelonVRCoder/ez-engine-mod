@@ -2,6 +2,8 @@
   "item.ez_engine.sapphire": "Sapphire",
   "item.ez_engine.raw_sapphire": "Raw Sapphire",
 
+  "item.ez_engine.metal_detector": "Metal Detector",
+
   "block.ez_engine.sapphire_block": "Block of Sapphire",
   "block.ez_engine.raw_sapphire_block": "Block of Raw Sapphire",
 
@@ -10,5 +12,6 @@
   "block.ez_engine.nether_sapphire_ore": "Block of Nether Sapphire Ore",
   "block.ez_engine.end_stone_sapphire_ore": "Block of End Stone Sapphire Ore",
 
-  "creativetab.tutorial_tab": "Sapphire Tab"
+  "creativetab.tutorial_tab": "Sapphire Tab",
+  "creativetab.advanced_stuff_tab": "Advanced Stuff"
 }
