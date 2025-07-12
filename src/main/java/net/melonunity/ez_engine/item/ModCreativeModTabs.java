@@ -39,6 +39,28 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.advanced_stuff_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+
+
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> FOOD = CREATIVE_MODE_TABS.register("food_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BURGER.get()))
+                    .title(Component.translatable("creativetab.food_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.STRAWBERRY.get());
+                        pOutput.accept(ModItems.BURGER.get());
+
+
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> FUEL_TAB = CREATIVE_MODE_TABS.register("fuel_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PINE_CONE.get()))
+                    .title(Component.translatable("creativetab.fuel_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.PINE_CONE.get());
 
 
                     })

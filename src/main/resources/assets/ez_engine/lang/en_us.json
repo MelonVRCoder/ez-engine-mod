@@ -4,6 +4,13 @@
 
   "item.ez_engine.metal_detector": "Metal Detector",
 
+  "block.ez_engine.sound_block": "Sound Block",
+
+  "item.ez_engine.strawberry": "Strawberry",
+  "item.ez_engine.burger": "Burger",
+
+  "item.ez_engine.pine_cone": "Pine Cone",
+
   "block.ez_engine.sapphire_block": "Block of Sapphire",
   "block.ez_engine.raw_sapphire_block": "Block of Raw Sapphire",
 
@@ -12,6 +19,11 @@
   "block.ez_engine.nether_sapphire_ore": "Block of Nether Sapphire Ore",
   "block.ez_engine.end_stone_sapphire_ore": "Block of End Stone Sapphire Ore",
 
+  "tooltip.ez_engine.metal_detector.tooltip": "Finds valuables underground!",
+
   "creativetab.tutorial_tab": "Sapphire Tab",
-  "creativetab.advanced_stuff_tab": "Advanced Stuff"
+  "creativetab.advanced_stuff_tab": "Advanced Stuff",
+  "creativetab.food_tab": "Food Tab",
+  "creativetab.fuel_tab": "Fuel Tab"
+
 }
