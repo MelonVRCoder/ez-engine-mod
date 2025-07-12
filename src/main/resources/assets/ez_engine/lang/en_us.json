@@ -5,5 +5,10 @@
   "block.ez_engine.sapphire_block": "Block of Sapphire",
   "block.ez_engine.raw_sapphire_block": "Block of Raw Sapphire",
 
-  "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
+  "block.ez_engine.sapphire_ore": "Block of Sapphire Ore",
+  "block.ez_engine.deepslate_sapphire_ore": "Block of Deepslate Sapphire Ore",
+  "block.ez_engine.nether_sapphire_ore": "Block of Nether Sapphire Ore",
+  "block.ez_engine.end_stone_sapphire_ore": "Block of End Stone Sapphire Ore",
+
+  "creativetab.tutorial_tab": "Sapphire Tab"
 }

@@ -1,0 +1,10 @@
+{
+  "values": [
+    "ez_engine:sapphire_block",
+    "ez_engine:raw_sapphire_block",
+    "ez_engine:sapphire_ore",
+    "ez_engine:deepslate_sapphire_ore",
+    "ez_engine:nether_sapphire_ore",
+    "ez_engine:end_stone_sapphire_ore"
+  ]
+}

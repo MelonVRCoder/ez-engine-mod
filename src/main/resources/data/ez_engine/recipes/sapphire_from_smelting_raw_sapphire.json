@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "sapphire",
+  "ingredient": {
+    "item": "ez_engine:raw_sapphire"
+  },
+  "result": "ez_engine:sapphire"
+}

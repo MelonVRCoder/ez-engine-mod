@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "ez_engine:sapphire"
+    }
+  },
+  "result": {
+    "item": "ez_engine:sapphire_block"
+  }
+}
