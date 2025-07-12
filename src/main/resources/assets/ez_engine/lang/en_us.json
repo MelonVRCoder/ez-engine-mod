@@ -2,5 +2,8 @@
   "item.ez_engine.sapphire": "Sapphire",
   "item.ez_engine.raw_sapphire": "Raw Sapphire",
 
+  "block.ez_engine.sapphire_block": "Block of Sapphire",
+  "block.ez_engine.raw_sapphire_block": "Block of Raw Sapphire",
+
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }

@@ -1,6 +1,7 @@
 package net.melonunity.ez_engine;
 
 import com.mojang.logging.LogUtils;
+import net.melonunity.ez_engine.block.ModBlocks;
 import net.melonunity.ez_engine.item.ModCreativeModTabs;
 import net.melonunity.ez_engine.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -30,6 +31,8 @@ public class EzEngine {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
