@@ -1,5 +1,6 @@
 package net.melonunity.ez_engine.item.custom;
 
+import net.melonunity.ez_engine.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -67,6 +68,6 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-       return state.is(Blocks.IRON_ORE) || state.is(Blocks.DIAMOND_ORE) ||state.is(Blocks.EMERALD_ORE);
+       return state.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
     }
 }
