@@ -5,7 +5,10 @@ import net.melonunity.ez_engine.block.ModBlocks;
 import net.melonunity.ez_engine.item.ModCreativeModTabs;
 import net.melonunity.ez_engine.item.ModItems;
 import net.melonunity.ez_engine.loot.ModLootModifiers;
+import net.melonunity.ez_engine.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -35,6 +38,8 @@ public class EzEngine {
         ModLootModifiers.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModSounds.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -47,14 +52,16 @@ public class EzEngine {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        // Some common setup code
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CATMINT.getId(), ModBlocks.POTTED_CATMINT);
+        });
     }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.SAPPHIRE);
-            event.accept(ModItems.RAW_SAPPHIRE);
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.BAR_BRAWL_MUSIC_DISC);
+
         }
     }
 

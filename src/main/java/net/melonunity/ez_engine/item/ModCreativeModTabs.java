@@ -97,6 +97,16 @@ public class ModCreativeModTabs {
                     })
                     .build());
 
+    public static final RegistryObject<CreativeModeTab> FLOWERS_TAB = CREATIVE_MODE_TABS.register("flowers_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CATMINT.get()))
+                    .title(Component.translatable("creativetab.fuel_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModBlocks.CATMINT.get());
+
+
+                    })
+                    .build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

@@ -5,8 +5,11 @@ import net.melonunity.ez_engine.block.custom.CornCropBlock;
 import net.melonunity.ez_engine.block.custom.SoundBlock;
 import net.melonunity.ez_engine.block.custom.StrawberryCropBlock;
 import net.melonunity.ez_engine.item.ModItems;
+import net.melonunity.ez_engine.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.item.Item;
@@ -44,7 +47,7 @@ public class ModBlocks {
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,8)));
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
-            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(ModSounds.SOUND_BLOCK_SOUNDS)));
 
 
     public static final RegistryObject<Block> SAPPHIRE_STAIRS = registerBlock("sapphire_stairs",
@@ -78,6 +81,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CORN_CROP = BLOCKS.register("corn_crop",
             () -> new CornCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).sound(SoundType.GRASS).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> CATMINT = registerBlock("catmint",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+                    BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> POTTED_CATMINT = BLOCKS.register("potted_catmint",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.CATMINT,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
