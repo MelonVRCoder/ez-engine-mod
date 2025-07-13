@@ -9,8 +9,13 @@
 
   "item.ez_engine.strawberry": "Strawberry",
   "item.ez_engine.burger": "Burger",
+  "item.ez_engine.corn": "Corn",
+
+  "item.ez_engine.strawberry_seeds": "Strawberry Seeds",
+  "item.ez_engine.corn_seeds": "Corn Seeds",
 
   "item.ez_engine.pine_cone": "Pine Cone",
+  "item.ez_engine.super_coal": "Super Coal",
 
   "item.ez_engine.sapphire_sword": "Sapphire Sword",
   "item.ez_engine.sapphire_pickaxe": "Sapphire Pickaxe",
@@ -45,7 +50,7 @@
 
   "creativetab.tutorial_tab": "Sapphire Tab",
   "creativetab.advanced_stuff_tab": "Advanced Stuff",
-  "creativetab.food_tab": "Food Tab",
+  "creativetab.food_and_seeds_tab": "Food & Seeds Tab",
   "creativetab.fuel_tab": "Fuel Tab"
 
 }

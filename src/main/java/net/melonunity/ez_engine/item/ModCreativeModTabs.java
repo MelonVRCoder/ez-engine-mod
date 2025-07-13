@@ -28,6 +28,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SAPPHIRE_SHOVEL.get());
                         pOutput.accept(ModItems.SAPPHIRE_HOE.get());
 
+                        pOutput.accept(ModItems.SAPPHIRE_HELMET.get());
+                        pOutput.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.SAPPHIRE_LEGGINGS.get());
+                        pOutput.accept(ModItems.SAPPHIRE_BOOTS.get());
+
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
 
@@ -66,12 +71,16 @@ public class ModCreativeModTabs {
                     })
                     .build());
 
-    public static final RegistryObject<CreativeModeTab> FOOD = CREATIVE_MODE_TABS.register("food_tab",
+    public static final RegistryObject<CreativeModeTab> FOOD_AND_SEEDS_TAB = CREATIVE_MODE_TABS.register("food_and_seeds_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BURGER.get()))
                     .title(Component.translatable("creativetab.food_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.STRAWBERRY.get());
                         pOutput.accept(ModItems.BURGER.get());
+                        pOutput.accept(ModItems.CORN.get());
+
+                        pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
+                        pOutput.accept(ModItems.CORN_SEEDS.get());
 
 
                     })
@@ -82,6 +91,7 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.fuel_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.PINE_CONE.get());
+                        pOutput.accept(ModItems.SUPER_COAL.get());
 
 
                     })

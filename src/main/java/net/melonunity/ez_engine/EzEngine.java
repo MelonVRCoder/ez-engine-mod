@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.melonunity.ez_engine.block.ModBlocks;
 import net.melonunity.ez_engine.item.ModCreativeModTabs;
 import net.melonunity.ez_engine.item.ModItems;
+import net.melonunity.ez_engine.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,9 +30,9 @@ public class EzEngine {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
 
+        ModLootModifiers.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading

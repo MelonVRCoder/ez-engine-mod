@@ -1,7 +1,9 @@
 package net.melonunity.ez_engine.block;
 
 import net.melonunity.ez_engine.EzEngine;
+import net.melonunity.ez_engine.block.custom.CornCropBlock;
 import net.melonunity.ez_engine.block.custom.SoundBlock;
+import net.melonunity.ez_engine.block.custom.StrawberryCropBlock;
 import net.melonunity.ez_engine.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -70,6 +72,12 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
     public static final RegistryObject<Block> SAPPHIRE_TRAPDOOR = registerBlock("sapphire_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> STRAWBERRY_CROP = BLOCKS.register("strawberry_crop",
+            () -> new StrawberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).sound(SoundType.GRASS).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> CORN_CROP = BLOCKS.register("corn_crop",
+            () -> new CornCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).sound(SoundType.GRASS).noOcclusion().noCollission()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
