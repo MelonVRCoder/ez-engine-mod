@@ -36,6 +36,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
 
+        this.tag(BlockTags.NEEDS_STONE_TOOL);
+
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SAPPHIRE_BLOCK.get())
                 .add(ModBlocks.RAW_SAPPHIRE_BLOCK.get())
@@ -45,6 +47,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.NETHER_SAPPHIRE_ORE.get())
                 .add(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
+
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.SAPPHIRE_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.SAPPHIRE_WALL.get());
 
     }
 }

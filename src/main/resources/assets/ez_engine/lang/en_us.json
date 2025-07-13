@@ -19,6 +19,16 @@
   "block.ez_engine.nether_sapphire_ore": "Block of Nether Sapphire Ore",
   "block.ez_engine.end_stone_sapphire_ore": "Block of End Stone Sapphire Ore",
 
+  "block.ez_engine.sapphire_stairs": "Sapphire Stairs",
+  "block.ez_engine.sapphire_slab": "Sapphire Slab",
+  "block.ez_engine.sapphire_button": "Sapphire Button",
+  "block.ez_engine.sapphire_pressure_plate": "Sapphire Pressure Plate",
+  "block.ez_engine.sapphire_fence": "Sapphire Fence",
+  "block.ez_engine.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.ez_engine.sapphire_wall": "Sapphire Wall",
+  "block.ez_engine.sapphire_door": "Sapphire Door",
+  "block.ez_engine.sapphire_trapdoor": "Sapphire Trapdoor",
+
   "tooltip.ez_engine.metal_detector.tooltip": "Finds valuables underground!",
 
   "creativetab.tutorial_tab": "Sapphire Tab",

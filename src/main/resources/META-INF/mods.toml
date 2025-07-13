@@ -23,7 +23,7 @@ displayName = "${mod_name}" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 updateJSONURL = "" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
-displayURL = "" #optional
+displayURL = "https://melonvrcoder.github.io/ez-engine/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="ez_engine.png" #optional
 # A text field displayed in the mod UI
