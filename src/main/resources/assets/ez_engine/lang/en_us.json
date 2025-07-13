@@ -1,6 +1,7 @@
 {
   "item.ez_engine.sapphire": "Sapphire",
   "item.ez_engine.raw_sapphire": "Raw Sapphire",
+  "item.ez_engine.sapphire_staff": "Sapphire Staff",
 
   "item.ez_engine.metal_detector": "Metal Detector",
 
@@ -10,6 +11,17 @@
   "item.ez_engine.burger": "Burger",
 
   "item.ez_engine.pine_cone": "Pine Cone",
+
+  "item.ez_engine.sapphire_sword": "Sapphire Sword",
+  "item.ez_engine.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.ez_engine.sapphire_axe": "Sapphire Axe",
+  "item.ez_engine.sapphire_shovel": "Sapphire Shovel",
+  "item.ez_engine.sapphire_hoe": "Sapphire Hoe",
+
+  "item.ez_engine.sapphire_helmet": "Sapphire Helmet",
+  "item.ez_engine.sapphire_chestplate": "Sapphire Chestplate",
+  "item.ez_engine.sapphire_leggings": "Sapphire Leggings",
+  "item.ez_engine.sapphire_boots": "Sapphire Boots",
 
   "block.ez_engine.sapphire_block": "Block of Sapphire",
   "block.ez_engine.raw_sapphire_block": "Block of Raw Sapphire",
