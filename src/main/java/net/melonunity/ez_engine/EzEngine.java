@@ -2,10 +2,13 @@ package net.melonunity.ez_engine;
 
 import com.mojang.logging.LogUtils;
 import net.melonunity.ez_engine.block.ModBlocks;
+import net.melonunity.ez_engine.entity.ModEntities;
+import net.melonunity.ez_engine.entity.client.RhinoRenderer;
 import net.melonunity.ez_engine.item.ModCreativeModTabs;
 import net.melonunity.ez_engine.item.ModItems;
 import net.melonunity.ez_engine.loot.ModLootModifiers;
 import net.melonunity.ez_engine.sound.ModSounds;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -39,6 +42,8 @@ public class EzEngine {
         ModBlocks.register(modEventBus);
 
         ModSounds.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -75,8 +80,11 @@ public class EzEngine {
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
 
+
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
+
         }
     }
 }

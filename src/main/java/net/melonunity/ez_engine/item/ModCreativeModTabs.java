@@ -73,7 +73,7 @@ public class ModCreativeModTabs {
 
     public static final RegistryObject<CreativeModeTab> FOOD_AND_SEEDS_TAB = CREATIVE_MODE_TABS.register("food_and_seeds_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BURGER.get()))
-                    .title(Component.translatable("creativetab.food_tab"))
+                    .title(Component.translatable("creativetab.food_and_seeds_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.STRAWBERRY.get());
                         pOutput.accept(ModItems.BURGER.get());
