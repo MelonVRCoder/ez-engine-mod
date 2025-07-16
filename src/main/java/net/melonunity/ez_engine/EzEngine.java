@@ -68,6 +68,11 @@ public class EzEngine {
             event.accept(ModItems.BAR_BRAWL_MUSIC_DISC);
 
         }
+
+        if(event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+            event.accept(ModItems.RHINO_SPAWN_EGG);
+
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

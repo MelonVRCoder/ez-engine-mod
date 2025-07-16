@@ -2,12 +2,14 @@ package net.melonunity.ez_engine.item;
 
 import net.melonunity.ez_engine.EzEngine;
 import net.melonunity.ez_engine.block.ModBlocks;
+import net.melonunity.ez_engine.entity.ModEntities;
 import net.melonunity.ez_engine.item.custom.FuelItem;
 import net.melonunity.ez_engine.item.custom.MetalDetectorItem;
 import net.melonunity.ez_engine.item.custom.ModArmorItem;
 import net.melonunity.ez_engine.item.custom.SapphireStaffItem;
 import net.melonunity.ez_engine.sound.ModSounds;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -70,6 +72,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new RecordItem(6, ModSounds.BAR_BRAWL,new Item.Properties().stacksTo(1), 2440));
+
+    public static final RegistryObject<Item> RHINO_SPAWN_EGG = ITEMS.register("rhino_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.RHINO, 0x7e9680, 0xc5d1c6,
+                    new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
